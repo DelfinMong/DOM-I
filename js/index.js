@@ -91,4 +91,14 @@ const contact3 = document.querySelectorAll('.contact p')[2].textContent = siteCo
 
 const footer = document.querySelector('footer p').textContent = siteContent['footer']['copyright'];
 
+const nav1 = document.querySelector('nav');
+const app = document.createElement('a');
+app.textContent = 'portfolio';
+app.style.color = 'green';
+nav1.appendChild(app);
 
+const nav2 = document.querySelector('nav');
+const prep = document.createElement('a');
+prep.textContent = 'resume';
+prep.style.color = 'green';
+nav2.prepend(prep);
